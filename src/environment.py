@@ -1,3 +1,12 @@
+"""
+            --- Charruo Bot ---
+    Version: (en desarrollo)
+    
+    Configuracion del entorno de ejecucion del bot
+    
+    https://github.com/lu1smgb/CharruoBot
+"""
+
 import dotenv
 import os
 import logging
@@ -18,7 +27,7 @@ SERVER_ID : int = int(os.environ.get('SERVER_ID'))
 # ID del servidor de pruebas
 TEST_SERVER_ID : int = int(os.environ.get('TEST_SERVER_ID'))
 
-# Configuracion acerca de la creacion de logs
+# Configuracion acerca del logging (informes)
 LOGGING_CONFIG = {
     'version': 1,
     'disabled_existing_loggers': True,
