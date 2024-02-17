@@ -10,6 +10,7 @@
 import dotenv
 import os
 import logging
+import pathlib
 from logging.config import dictConfig
 
 dotenv.load_dotenv(override=True)
@@ -26,6 +27,10 @@ SERVER_ID : int = int(os.environ.get('SERVER_ID'))
 
 # ID del servidor de pruebas
 TEST_SERVER_ID : int = int(os.environ.get('TEST_SERVER_ID'))
+
+SRC_DIR = pathlib.Path(__file__).parent
+
+COG_DIR = SRC_DIR / "cogs"
 
 # Configuracion acerca del logging (informes)
 LOGGING_CONFIG = {
